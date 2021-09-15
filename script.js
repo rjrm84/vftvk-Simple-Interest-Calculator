@@ -12,6 +12,7 @@ slider.oninput = function() {
 
 function calculate()
 {
+
     const theYear= '2021';
     rate = document.getElementById("rate").value;
      amount= document.getElementById("principal").value;
@@ -21,6 +22,8 @@ function calculate()
     deposit.innerHTML= (amount)
     sum= parseFloat(time)+ parseFloat(theYear);
     future.innerHTML= (sum);
+
+    if (amount <=0) { alert("please enter a valid number")}
 
 
 }
